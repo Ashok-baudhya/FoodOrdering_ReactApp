@@ -21,7 +21,42 @@ const Header = ()=>{
     )
 }
 
+const ResturantCard = ()=>{
+   return(
+    <div className="res-card">
+        <img className="res-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/miwg0f0fr0b1al6hhc9p"></img>
+        <h4>Jayaka</h4>
+        <h4>North Indian, South Indian</h4>
+        <h4>4.1 Star</h4>
+        <h4>30 minutes</h4>
+    </div>
+   ) 
+}
+
 const Body = () =>{
+return(
+    <div className="body">
+        <div className="search">Search</div>
+        <div className="res-container">
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+            <ResturantCard/>
+        </div>
+
+    </div>
+)
 
 }
 
