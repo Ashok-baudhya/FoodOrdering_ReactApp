@@ -7,7 +7,7 @@ const Header = ()=>{
     return(
         <div className="header">
             <div className="logo">
-                <img height={100} src="https://image.similarpng.com/very-thumbnail/2021/09/Good-food-logo-design-on-transparent-background-PNG.png"></img>
+                <img height={130} src="https://cdn.dribbble.com/users/7004524/screenshots/15197928/media/40944f27c2dcfaf14038f387b4e88c2d.jpg"></img>
             </div>
             <div className="nav-items">
             <ul>
