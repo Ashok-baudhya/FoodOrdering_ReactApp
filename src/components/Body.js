@@ -1,13 +1,13 @@
 import ResturantCard from "./ResturantCard";
 import resList from "../utils/mockData";
 import { useState, useEffect} from "react";
-import resList from "../utils/mockData";
+import Shimmer from "./Shimmer";
 
  
 const Body = () =>{
 
     // local state Variable -super powerful variable
-    const [ListOfResturant, setListOfResturant] = useState(resList)
+    const [ListOfResturant, setListOfResturant] = useState([])
 
     useEffect(()=>{
         fetchData();
@@ -21,10 +21,15 @@ const Body = () =>{
         const json = await data.json();
 
         console.log(json);
+        // option chainig
         setListOfResturant(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
 
     };
 
+    if(ListOfResturant.length ==0)
+    {
+        return<Shimmer/>
+    }
     return(
         <div className="body">
             <div className="filter">
