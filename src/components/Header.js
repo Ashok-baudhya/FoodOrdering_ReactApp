@@ -1,9 +1,10 @@
 import { LOGO_URL } from "../utils/contents";
+
 const Header = ()=>{
     return(
         <div className="header">
             <div className="logo">
-                <img height={130} src={LOGO_URL}></img>
+                <a href="index.html"><img height={130} src={LOGO_URL}></img></a>
             </div>
             <div className="nav-items">
             <ul>

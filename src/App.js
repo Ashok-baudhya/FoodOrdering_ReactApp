@@ -17,3 +17,5 @@ const root = ReactDom.createRoot(document.getElementById("root"));
 
 root.render(<AppLayout/>);
 
+export default AppLayout;
+
